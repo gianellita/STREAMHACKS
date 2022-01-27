@@ -6,6 +6,8 @@ Created on Tue Jan 25 21:24:11 2022
 """
 
 import streamlit as st
+import joblib #cargar en el entorno el .pk
+import numpy as np #cargar la libreria
 
 st.title ('Compra de Arneses y Botas para perros')
 
@@ -13,8 +15,7 @@ st.header("Tienda RED")
 
 st.subheader("Ingrese los datos de su perro")
 
-import joblib #cargar en el entorno el .pk
-import numpy as np #cargar la libreria
+
 
 model_filename = 'perros.pkl'
 # Cargamos el modelo desde el archivo
